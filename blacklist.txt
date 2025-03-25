@@ -1,6 +1,5 @@
-https://a.magsrv.com
-https://cdn.tsyndicate.com/sdk/v1/master.spot.js
-https://media.thisvid.com/js/cookiepolicy.min.js
-https://thisvid.com/enblk/envblk.js
-https://ads.exoclick.com/ads.js
-https://cdn.tsyndicate.com
+a.magsrv.com
+cdn.tsyndicate.com
+media.thisvid.com/js/
+thisvid.com/enblk/
+ads.exoclick.com
