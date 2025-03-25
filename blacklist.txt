@@ -1,5 +1,3 @@
-a.magsrv.com
-cdn.tsyndicate.com
-media.thisvid.com/js/
-thisvid.com/enblk/
-ads.exoclick.com
+magsrv.com
+tsyndicate.com
+exoclick.com
