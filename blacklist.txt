@@ -36,8 +36,4 @@ twinrdengine.com
 go.rmhfrtnd.com
 rmhfrtnd.com
 cdn.tsyndicate.com
-media.thisvid.com
 ad.twinrdengine.com
-/widget/ads.
-/pagead.js$domain=d3ward.github.io
-/pagead.js
