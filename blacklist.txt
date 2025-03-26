@@ -1,4 +1,5 @@
 adsrvr.org
+insight.adsrvr.org
 ad.doubleclick.net
 amazonaax.com
 advertising-api-eu.amazon.com
