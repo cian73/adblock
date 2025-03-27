@@ -7,7 +7,6 @@ cdn.mouseflow.com
 o2.mouseflow.com
 gtm.mouseflow.com
 api.mouseflow.com
-api.mouseflow.com
 cdn-test.mouseflow.com
 luckyorange.com
 api.luckyorange.com
@@ -29,10 +28,6 @@ analytics.pinterest.com
 trk.pinterest.com
 events.reddit.com
 events.redditmedia.com
-auction.unityads.unity3d.com
-webview.unityads.unity3d.com
-config.unityads.unity3d.com
-adserver.unityads.unity3d.com
 ads-api.tiktok.com
 analytics.tiktok.com
 ads-sg.tiktok.com
@@ -69,18 +64,12 @@ amazonaax.com
 advertising-api-eu.amazon.com
 affiliationjs.s3.amazonaws.com
 tracking.india.miui.com
-ads.youtube.com
 notes-analytics-events.apple.com
 weather-analytics-events.apple.com
 books-analytics-events.apple.com
 api-adservices.apple.com
-tracking.rus.miui.com
-data.mistat.rus.xiaomi.com
-data.mistat.india.xiaomi.com
-data.mistat.xiaomi.com
 iot-logser.realme.com
 iot-eu-logser.realme.com
-log.byteoversea.com
 analyticsengine.s3.amazonaws.com
 analytics.s3.amazonaws.com
 adtech.yahooinc.com
