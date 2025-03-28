@@ -72,3 +72,4 @@ cdn.discordapp.com
 events.gfe.nvidia.com	
 prod.otel.kaizen.nvidia.com	
 wyze-device-log.s3.us-west-2.amazonaws.com
+mobile.events.data.microsoft.com
