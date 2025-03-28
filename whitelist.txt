@@ -68,3 +68,7 @@ www.redditstatic.com
 reddit.map.fastly.net
 media.discordapp.net
 cdn.discordapp.com
+(\.|^)archive\.org$	
+events.gfe.nvidia.com	
+prod.otel.kaizen.nvidia.com	
+wyze-device-log.s3.us-west-2.amazonaws.com
