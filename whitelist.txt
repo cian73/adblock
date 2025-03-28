@@ -74,3 +74,5 @@ xsts.auth.xboxlive.com
 www.redditmedia.com
 www.redditstatic.com
 reddit.map.fastly.net
+media.discordapp.net
+cdn.discordapp.com
