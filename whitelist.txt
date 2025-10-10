@@ -75,3 +75,10 @@ wyze-device-log.s3.us-west-2.amazonaws.com
 mobile.events.data.microsoft.com
 cdnjs.cloudflare.com
 cdn.jsdelivr.net
+wyze-device-log.s3.us-west-2.amazonaws.com
+static.xx.fbcdn.net
+www.gstatic.com
+tm-gta5-prod.ros.rockstargames.com
+log-appfirst.scotiabank.com
+budget-track.web.app 
+watson.events.data.microsoft.com
