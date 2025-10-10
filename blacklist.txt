@@ -102,5 +102,6 @@ cs.luckyorange.net
 settings.luckyorange.net
 ads-api.twitter.com
 pagead2.googlesyndication.com
-recon.com
-grindr.com
+s.youtube.com
+redirector.googlevideo.com
+youtubei.googleapis.com
