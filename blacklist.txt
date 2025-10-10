@@ -116,3 +116,6 @@ connect.facebook.net
 graph.facebook.com
 api.vk.com
 ngfts.lge.com
+live.chartboost.com
+ws.tapjoyads.com
+init.supersonicads.com
