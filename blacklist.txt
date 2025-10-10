@@ -105,3 +105,14 @@ pagead2.googlesyndication.com
 s.youtube.com
 redirector.googlevideo.com
 youtubei.googleapis.com
+api.honeybadger.io
+api.raygun.com
+airbrake.io
+collect.airbrake.io
+logging.googleapis.com
+trace.googleapis.com
+errorreporting.googleapis.com
+connect.facebook.net
+graph.facebook.com
+api.vk.com
+ngfts.lge.com
