@@ -8,15 +8,15 @@
 /^192\.168\.(?:\d{1,3})\.(?:\d{1,3})$/
 
 ## IPv4 Special / Link-Local / Loopback
-/^169\.254\.(?:\d{1,3})\.(?:\d{1,3})$/
-/^127\.(?:\d{1,3})\.(?:\d{1,3})\.(?:\d{1,3})$/
 /^0\.0\.0\.(?:\d{1,3})$/
+/^127\.(?:\d{1,3})\.(?:\d{1,3})\.(?:\d{1,3})$/
+/^169\.254\.(?:\d{1,3})\.(?:\d{1,3})$/
 
 ## IPv6 Private / Link-Local / Loopback
-/^f[cd][0-9a-f]{2}:/          # ULA (fc00::/7)
-/^fe80:/                      # Link-local
 /^::1$/                       # Loopback
 /^::$/                        # Unspecified
+/^f[cd][0-9a-f]{2}:/          # ULA (fc00::/7)
+/^fe80:/                      # Link-local
 
 ## Localhost / Local Domains
 /^([a-z0-9\-]+\.)?(localhost|localdomain|ip6-localhost)$/
@@ -55,17 +55,20 @@ ads.pinterest.com
 ads.youtube.com
 adsrvr.org
 amazonaax.com
-advertising-api-eu.amazon.com
-advertising.apple.com
 affiliationjs.s3.amazonaws.com
 business-api.tiktok.com
 cdn.tsyndicate.com
 getcam4.com
 go.rmhfrtnd.com
 m.hue2b.com
+pagead2.googlesyndication.com
 rmhfrtnd.com
 smartclip.com
+smartclip.net
+thisvid.com/enblk/envbcdldr.php
 xlivrdr.com
+advertising-api-eu.amazon.com
+advertising.apple.com
 
 # ----------------------
 # Analytics / Session Replay
@@ -75,11 +78,11 @@ xlivrdr.com
 api.luckyorange.com
 cdn.luckyorange.com
 cs.luckyorange.net
+luckyorange.com
 realtime.luckyorange.com
 settings.luckyorange.net
 upload.luckyorange.net
 w1.luckyorange.com
-luckyorange.com
 
 ## Mouseflow
 api.mouseflow.com
@@ -90,30 +93,68 @@ mouseflow.com
 o2.mouseflow.com
 
 ## Other Analytics
+adfstat.yandex.ru
 analytics.s3.amazonaws.com
 analytics.tiktok.com
 analyticsengine.s3.amazonaws.com
-trk.pinterest.com
-log.byteoversea.com
-extmaps-api.yandex.net
 appmetrica.yandex.ru
-adfstat.yandex.ru
-metrika.yandex.ru
-offerwall.yandex.net
-adfox.yandex.ru
-api.ad.xiaomi.com
-data.mistat.xiaomi.com
 data.mistat.india.xiaomi.com
 data.mistat.rus.xiaomi.com
+data.mistat.xiaomi.com
+extmaps-api.yandex.net
+grs.hicloud.com
+log.byteoversea.com
+logbak.hicloud.com
+logservice.hicloud.com
+logservice1.hicloud.com
+metrika.yandex.ru
+offerwall.yandex.net
 sdkconfig.ad.xiaomi.com
 sdkconfig.ad.intl.xiaomi.com
 tracking.rus.miui.com
 metrics.data.hicloud.com
 metrics2.data.hicloud.com
-grs.hicloud.com
-logservice.hicloud.com
-logservice1.hicloud.com
-logbak.hicloud.com
+api.ad.xiaomi.com
+analytics.pinterest.com
+trk.pinterest.com
+
+## Smart TV / Device Telemetry
+androidtvchannels-pa.googleapis.com
+androidtvwatsonfe-pa.googleapis.com
+data.mistat.intl.xiaomi.com
+device-metrics-us.amazon.com
+smartshare.lgtvsdp.com
+snapads.com
+tracking.intl.miui.com
+us.ad.lgsmartad.com
+us.cdpsvc.lgtvcommon.com
+us.homeprv.lgtvcommon.com
+us.ibs.lgappstv.com
+us.lgsmartad.com
+us.nudge.lgtvcommon.com
+us.rdx2.lgtvsdp.com
+us.service.lgtvcommon.com
+us.info.lgsmartad.com
+
+## Roku / TV Logs
+austin.logs.roku.com
+cooper.logs.roku.com
+display.ravm.tv
+liberty.logs.roku.com
+mobile.logs.roku.com
+ravm.tv
+scribe.logs.roku.com
+midland.logs.roku.com
+
+## Alphonso / TVInteractive
+alphonso.tv
+api.thetake.com
+control-tvinteractive.tv
+control2.tvinteractive.tv
+control-zoo-dai-default.tvinteractive.tv
+mcp.tvinteractive.tv
+tv.ads.spotx.tv
+tvmeta-dynamic.tvinteractive.tv
 
 # ----------------------
 # Error Reporting / Logging
@@ -124,43 +165,43 @@ app.bugsnag.com
 notify.bugsnag.com
 sessions.bugsnag.com
 
-## Sentry
-app.getsentry.com
-browser.sentry-cdn.com
-
 ## Honeybadger / Raygun / Airbrake
 airbrake.io
 api.honeybadger.io
 api.raygun.com
 collect.airbrake.io
+errorreporting.googleapis.com
 logging.googleapis.com
 trace.googleapis.com
-errorreporting.googleapis.com
+
+## Sentry
+app.getsentry.com
+browser.sentry-cdn.com
 
 # ----------------------
 # Social / Tracking
 # ----------------------
 
+## Chartboost / Tapjoy / Supersonic
+init.supersonicads.com
+live.chartboost.com
+ws.tapjoyads.com
+
 ## Facebook
 connect.facebook.net
 graph.facebook.com
+
+## Pinterest
+ads.pinterest.com
+log.pinterest.com
+widgets.pinterest.com
 
 ## Reddit
 events.reddit.com
 events.redditmedia.com
 
-## Pinterest
-log.pinterest.com
-analytics.pinterest.com
-widgets.pinterest.com
-
 ## VK
 api.vk.com
-
-## Chartboost / Tapjoy / Supersonic
-live.chartboost.com
-ws.tapjoyads.com
-init.supersonicads.com
 
 # ----------------------
 # Adult / NSFW
@@ -178,26 +219,27 @@ thisvid.com/enblk/envbcdldr.php
 # ----------------------
 
 ## YouTube Ads
-s.youtube.com
-redirector.googlevideo.com
-youtubei.googleapis.com
+ads.youtube.com
 pagead2.googlesyndication.com
+redirector.googlevideo.com
+s.youtube.com
+youtubei.googleapis.com
 
 # ----------------------
 # SnapAds / Snapchat
 # ----------------------
 
 ## SnapAds
-snapads.com
-euw.adserver.snapads.com
 ase.adserver.snapads.com
+euw.adserver.snapads.com
+snapads.com
 usc.adserver.snapads.com
 use.adserver.snapads.com
 
 ## Snapchat Analytics / App
 adsapi.snapchat.com
-asia-southeast1-gcp.api.snapchat.com
-aws-cf.api.snapchat.com
 app-analytics.snapchat.com
 app-analytics-v2.snapchat.com
+asia-southeast1-gcp.api.snapchat.com
+aws-cf.api.snapchat.com
 us-east1-aws.api.snapchat.com
