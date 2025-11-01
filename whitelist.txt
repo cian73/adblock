@@ -65,6 +65,7 @@ office.com
 office.net
 office365.com
 officeclient.microsoft.com
+open.spotify.com
 plex.bz
 plex.tv
 plexapp.com
@@ -93,4 +94,5 @@ tm-gta5-prod.ros.rockstargames.com
 traffic.libsyn.com
 vidible.tv
 virtualearth.net
+wl.spotify.com
 ytimg.com
