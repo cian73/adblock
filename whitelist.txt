@@ -24,6 +24,7 @@ events.gfe.nvidia.com
 fe3.delivery.dsp.mp.microsoft.com.nsatc.net
 firestore.googleapis.com
 fonts.gstatic.com
+fp.mesedge.net
 g.live.com
 geo-prod.do.dsp.mp.microsoft.com
 geo3.ggpht.com
