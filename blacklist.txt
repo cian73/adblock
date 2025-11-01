@@ -149,3 +149,4 @@ ngfts.lge.com
 smartclip.com
 device-metrics-us.amazon.com
 advertising.apple.com
+hotjar-analytics.com
