@@ -1,39 +1,99 @@
-ads30.adcolony.com
+# ----------------------
+# Internal / DNS Rebinding Protection
+# ----------------------
+
+## IPv4 Private Networks
+/^10\.(?:\d{1,3})\.(?:\d{1,3})\.(?:\d{1,3})$/
+/^172\.(?:1[6-9]|2\d|3[0-1])\.(?:\d{1,3})\.(?:\d{1,3})$/
+/^192\.168\.(?:\d{1,3})\.(?:\d{1,3})$/
+
+## IPv4 Special / Link-Local / Loopback
+/^169\.254\.(?:\d{1,3})\.(?:\d{1,3})$/
+/^127\.(?:\d{1,3})\.(?:\d{1,3})\.(?:\d{1,3})$/
+/^0\.0\.0\.(?:\d{1,3})$/
+
+## IPv6 Private / Link-Local / Loopback
+/^f[cd][0-9a-f]{2}:/          # ULA (fc00::/7)
+/^fe80:/                      # Link-local
+/^::1$/                       # Loopback
+/^::$/                        # Unspecified
+
+## Localhost / Local Domains
+/^([a-z0-9\-]+\.)?(localhost|localdomain|ip6-localhost)$/
+
+# ----------------------
+# Ads / Ad Networks
+# ----------------------
+
+## AdColony
 adc3-launch.adcolony.com
+ads30.adcolony.com
 events3alt.adcolony.com
 wd.adcolony.com
-mouseflow.com
-cdn.mouseflow.com
-o2.mouseflow.com
-gtm.mouseflow.com
+
+## ExoClick
+ads.exoclick.com
+exoclick.com
+
+## Magsrv
+a.magsrv.com
+magsrv.com
+s.magsrv.com
+
+## TwinRD Engine
+ad.twinrdengine.com
+twinrdengine.com
+
+## TrafficStars
+trafficstars.com
+
+## Other Ad Networks
+ad.doubleclick.net
+ads-api.tiktok.com
+ads-api.twitter.com
+ads.pinterest.com
+ads.youtube.com
+adsrvr.org
+amazonaax.com
+advertising-api-eu.amazon.com
+advertising.apple.com
+affiliationjs.s3.amazonaws.com
+business-api.tiktok.com
+cdn.tsyndicate.com
+getcam4.com
+go.rmhfrtnd.com
+m.hue2b.com
+rmhfrtnd.com
+smartclip.com
+xlivrdr.com
+
+# ----------------------
+# Analytics / Session Replay
+# ----------------------
+
+## LuckyOrange
+api.luckyorange.com
+cdn.luckyorange.com
+cs.luckyorange.net
+realtime.luckyorange.com
+settings.luckyorange.net
+upload.luckyorange.net
+w1.luckyorange.com
+luckyorange.com
+
+## Mouseflow
 api.mouseflow.com
 cdn-test.mouseflow.com
-luckyorange.com
-api.luckyorange.com
-realtime.luckyorange.com
-cdn.luckyorange.com
-w1.luckyorange.com
-upload.luckyorange.net
-cs.luckyorange.net
-settings.luckyorange.net
-notify.bugsnag.com
-sessions.bugsnag.com
-api.bugsnag.com
-app.bugsnag.com
-browser.sentry-cdn.com
-app.getsentry.com
-ads.pinterest.com
-log.pinterest.com
-analytics.pinterest.com
-trk.pinterest.com
-events.reddit.com
-events.redditmedia.com
-ads-api.tiktok.com
+cdn.mouseflow.com
+gtm.mouseflow.com
+mouseflow.com
+o2.mouseflow.com
+
+## Other Analytics
+analytics.s3.amazonaws.com
 analytics.tiktok.com
-ads-sg.tiktok.com
-analytics-sg.tiktok.com
-business-api.tiktok.com
-ads.tiktok.com
+analyticsengine.s3.amazonaws.com
+trk.pinterest.com
 log.byteoversea.com
 extmaps-api.yandex.net
 appmetrica.yandex.ru
@@ -54,99 +114,90 @@ grs.hicloud.com
 logservice.hicloud.com
 logservice1.hicloud.com
 logbak.hicloud.com
-ads.youtube.com
-ads-api.twitter.com
-static.ads-twitter.com
-adsrvr.org
-insight.adsrvr.org
-ad.doubleclick.net
-amazonaax.com
-advertising-api-eu.amazon.com
-affiliationjs.s3.amazonaws.com
-tracking.india.miui.com
-notes-analytics-events.apple.com
-weather-analytics-events.apple.com
-books-analytics-events.apple.com
-api-adservices.apple.com
-iot-logser.realme.com
-iot-eu-logser.realme.com
-analyticsengine.s3.amazonaws.com
-analytics.s3.amazonaws.com
-adtech.yahooinc.com
-magsrv.com
-tsyndicate.com
-exoclick.com
-getcam4.com
-xlivrdr.com
-thisvid.com/enblk/envbcdldr.php
-chatwithwebcams.com
-chaturbate.com
-ads.exoclick.com
-trafficstars.com
-xhcdn.com
-a.magsrv.com
-s.magsrv.com
-twinrdengine.com
-go.rmhfrtnd.com
-rmhfrtnd.com
-cdn.tsyndicate.com
-ad.twinrdengine.com
-m.hue2b.com
-cdn.mouseflow.com
-api.luckyorange.com
-realtime.luckyorange.com
-cdn.luckyorange.com
-w1.luckyorange.com
-upload.luckyorange.net
-cs.luckyorange.net
-settings.luckyorange.net
-ads-api.twitter.com
-pagead2.googlesyndication.com
-s.youtube.com
-redirector.googlevideo.com
-youtubei.googleapis.com
+
+# ----------------------
+# Error Reporting / Logging
+# ----------------------
+
+## Bugsnag
+app.bugsnag.com
+notify.bugsnag.com
+sessions.bugsnag.com
+
+## Sentry
+app.getsentry.com
+browser.sentry-cdn.com
+
+## Honeybadger / Raygun / Airbrake
+airbrake.io
 api.honeybadger.io
 api.raygun.com
-airbrake.io
 collect.airbrake.io
 logging.googleapis.com
 trace.googleapis.com
 errorreporting.googleapis.com
+
+# ----------------------
+# Social / Tracking
+# ----------------------
+
+## Facebook
 connect.facebook.net
 graph.facebook.com
+
+## Reddit
+events.reddit.com
+events.redditmedia.com
+
+## Pinterest
+log.pinterest.com
+analytics.pinterest.com
+widgets.pinterest.com
+
+## VK
 api.vk.com
-ngfts.lge.com
+
+## Chartboost / Tapjoy / Supersonic
 live.chartboost.com
 ws.tapjoyads.com
 init.supersonicads.com
-widgets.pinterest.com
+
+# ----------------------
+# Adult / NSFW
+# ----------------------
+
+## Chaturbate
+chaturbate.com
+
+## Webcam / Adult Sites
+chatwithwebcams.com
+thisvid.com/enblk/envbcdldr.php
+
+# ----------------------
+# YouTube / Google Ads
+# ----------------------
+
+## YouTube Ads
+s.youtube.com
+redirector.googlevideo.com
+youtubei.googleapis.com
+pagead2.googlesyndication.com
+
+# ----------------------
+# SnapAds / Snapchat
+# ----------------------
+
+## SnapAds
+snapads.com
+euw.adserver.snapads.com
+ase.adserver.snapads.com
+usc.adserver.snapads.com
+use.adserver.snapads.com
+
+## Snapchat Analytics / App
 adsapi.snapchat.com
 asia-southeast1-gcp.api.snapchat.com
 aws-cf.api.snapchat.com
 app-analytics.snapchat.com
 app-analytics-v2.snapchat.com
-euw.adserver.snapads.com
-ads-interfaces.sc-cdn.net
-ase.adserver.snapads.com
-usc.adserver.snapads.com
-usc.adserver.snapads.com
-use.adserver.snapads.com
-snapads.com
 us-east1-aws.api.snapchat.com
-appnexus.com
-s.youtube.com
-redirector.googlevideo.com
-youtubei.googleapis.com
-fingerprintjs.com
-api.honeybadger.io
-api.raygun.com
-logging.googleapis.com
-trace.googleapis.com
-errorreporting.googleapis.com
-coinhive.com
-ads-api.x.com
-ngfts.lge.com
-smartclip.com
-device-metrics-us.amazon.com
-advertising.apple.com
-hotjar-analytics.com
