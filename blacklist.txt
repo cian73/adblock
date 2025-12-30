@@ -48,9 +48,13 @@ ws.tapjoyads.com
 ## DoubleClick / Google Ads
 ad.doubleclick.net
 dai.google.com
+m.doubleclick.net
+mediavisor.doubleclick.net
 pagead2.googlesyndication.com
 pubads.g.doubleclick.net
 securepubads.g.doubleclick.net
+static.doubleclick.net
+stats.g.doubleclick.net
 tpc.googlesyndication.com
 
 ## ExoClick
@@ -257,7 +261,7 @@ chaturbate.com
 snapshots.xcdnpro.com
 
 # ----------------------
-# MAY BREAK THINGS
+# MAY BREAK THINGS?
 # ----------------------
 
 ## Privacy & Consent Management
