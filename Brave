@@ -1,0 +1,231 @@
+! ==================================================
+! Ads / Ad Networks
+! ==================================================
+
+! AdColony
+||adc3-launch.adcolony.com^
+||ads30.adcolony.com^
+||events3alt.adcolony.com^
+||wd.adcolony.com^
+
+! ExoClick
+||ads.exoclick.com^
+||exoclick.com^
+
+! Magsrv
+||a.magsrv.com^
+||magsrv.com^
+||s.magsrv.com^
+
+! TwinRD Engine
+||ad.twinrdengine.com^
+||twinrdengine.com^
+
+! TrafficStars
+||trafficstars.com^
+
+! Other Ad Networks
+||ad.doubleclick.net^
+||ads-api.tiktok.com^
+||ads-api.twitter.com^
+||ads.pinterest.com^
+||ads.youtube.com^
+||adsrvr.org^
+||amazonaax.com^
+||affiliationjs.s3.amazonaws.com^
+||business-api.tiktok.com^
+||cdn.tsyndicate.com^
+||getcam4.com^
+||go.rmhfrtnd.com^
+||m.hue2b.com^
+||pagead2.googlesyndication.com^
+||rmhfrtnd.com^
+||smartclip.com^
+||smartclip.net^
+||advertising-api-eu.amazon.com^
+||advertising.apple.com^
+
+! Path-based block
+||thisvid.com/enblk/envbcdldr.php
+
+
+! ==================================================
+! Analytics / Session Replay
+! ==================================================
+
+! LuckyOrange
+||api.luckyorange.com^
+||cdn.luckyorange.com^
+||cs.luckyorange.net^
+||luckyorange.com^
+||realtime.luckyorange.com^
+||settings.luckyorange.net^
+||upload.luckyorange.net^
+||w1.luckyorange.com^
+
+! Mouseflow
+||api.mouseflow.com^
+||cdn-test.mouseflow.com^
+||cdn.mouseflow.com^
+||gtm.mouseflow.com^
+||mouseflow.com^
+||o2.mouseflow.com^
+
+! Other Analytics
+||adfstat.yandex.ru^
+||analytics.s3.amazonaws.com^
+||analytics.tiktok.com^
+||analyticsengine.s3.amazonaws.com^
+||appmetrica.yandex.ru^
+||data.mistat.india.xiaomi.com^
+||data.mistat.rus.xiaomi.com^
+||data.mistat.xiaomi.com^
+||extmaps-api.yandex.net^
+||grs.hicloud.com^
+||log.byteoversea.com^
+||logbak.hicloud.com^
+||logservice.hicloud.com^
+||logservice1.hicloud.com^
+||metrika.yandex.ru^
+||offerwall.yandex.net^
+||sdkconfig.ad.xiaomi.com^
+||sdkconfig.ad.intl.xiaomi.com^
+||tracking.rus.miui.com^
+||metrics.data.hicloud.com^
+||metrics2.data.hicloud.com^
+||api.ad.xiaomi.com^
+||analytics.pinterest.com^
+||trk.pinterest.com^
+
+! ==================================================
+! Smart TV / Device Telemetry
+! ==================================================
+
+||androidtvchannels-pa.googleapis.com^
+||androidtvwatsonfe-pa.googleapis.com^
+||data.mistat.intl.xiaomi.com^
+||device-metrics-us.amazon.com^
+||smartshare.lgtvsdp.com^
+||snapads.com^
+||tracking.intl.miui.com^
+||us.ad.lgsmartad.com^
+||us.cdpsvc.lgtvcommon.com^
+||us.homeprv.lgtvcommon.com^
+||us.ibs.lgappstv.com^
+||us.lgsmartad.com^
+||us.nudge.lgtvcommon.com^
+||us.rdx2.lgtvsdp.com^
+||us.service.lgtvcommon.com^
+||us.info.lgsmartad.com^
+
+! Roku
+||austin.logs.roku.com^
+||cooper.logs.roku.com^
+||display.ravm.tv^
+||liberty.logs.roku.com^
+||mobile.logs.roku.com^
+||ravm.tv^
+||scribe.logs.roku.com^
+||midland.logs.roku.com^
+
+! Alphonso / TVInteractive
+||alphonso.tv^
+||api.thetake.com^
+||control-tvinteractive.tv^
+||control2.tvinteractive.tv^
+||control-zoo-dai-default.tvinteractive.tv^
+||mcp.tvinteractive.tv^
+||tv.ads.spotx.tv^
+||tvmeta-dynamic.tvinteractive.tv^
+
+
+! ==================================================
+! Error Reporting / Logging
+! ==================================================
+
+! Bugsnag
+||app.bugsnag.com^
+||notify.bugsnag.com^
+||sessions.bugsnag.com^
+
+! Honeybadger / Raygun / Airbrake
+||airbrake.io^
+||api.honeybadger.io^
+||api.raygun.com^
+||collect.airbrake.io^
+||errorreporting.googleapis.com^
+||logging.googleapis.com^
+||trace.googleapis.com^
+
+! Sentry
+||app.getsentry.com^
+||browser.sentry-cdn.com^
+
+
+! ==================================================
+! Social / Tracking
+! ==================================================
+
+! Chartboost / Tapjoy / Supersonic
+||init.supersonicads.com^
+||live.chartboost.com^
+||ws.tapjoyads.com^
+
+! Facebook
+||connect.facebook.net^
+||graph.facebook.com^
+
+! Pinterest
+||ads.pinterest.com^
+||log.pinterest.com^
+||widgets.pinterest.com^
+
+! Reddit
+||events.reddit.com^
+||events.redditmedia.com^
+
+! VK
+||api.vk.com^
+
+
+! ==================================================
+! Adult / NSFW
+! ==================================================
+
+! Chaturbate
+||chaturbate.com^
+
+! Webcam / Adult
+||chatwithwebcams.com^
+||snapshots.xcdnpro.com^
+||join.getcam4.com^
+||landers.cam4.com^
+||xhamsterlive.stream^
+||hotfree123.com^
+
+
+! ==================================================
+! YouTube / Google Ads
+! ==================================================
+
+||ads.youtube.com^
+||pagead2.googlesyndication.com^
+||redirector.googlevideo.com^
+||s.youtube.com^
+||youtubei.googleapis.com^
+
+
+! ==================================================
+! SnapAds / Snapchat
+! ==================================================
+
+||ase.adserver.snapads.com^
+||euw.adserver.snapads.com^
+||usc.adserver.snapads.com^
+||use.adserver.snapads.com^
+||adsapi.snapchat.com^
+||app-analytics.snapchat.com^
+||app-analytics-v2.snapchat.com^
+||asia-southeast1-gcp.api.snapchat.com^
+||aws-cf.api.snapchat.com^
+||us-east1-aws.api.snapchat.com^
