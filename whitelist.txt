@@ -1,99 +1,195 @@
-1drv.com
-activity.windows.com
-amazonaws.com
-appleid.apple.com
-archive.org
-android.com
-android.clients.google.com
-bazaarvoice.com
-brightcove.net
-budget-track.web.app
-c.s-microsoft.com
-clients.google.com
-cloudflare.com
-cloudfront.net
-contentproxy.signal.org
-discordapp.com
-dl.delivery.mp.microsoft.com
-dl.google.com
-dns.msftncsi.com
-dropbox.com
-edge.api.brightcove.com
-embedly.com
-events.gfe.nvidia.com
-fe3.delivery.dsp.mp.microsoft.com.nsatc.net
-firestore.googleapis.com
-fonts.gstatic.com
-fp.mesedge.net
-g.live.com
-geo-prod.do.dsp.mp.microsoft.com
-geo3.ggpht.com
-gfwsl.geforce.com
-giphy-proxy-production.whispersystems.org
-giphy.com
-github.com
-github.io
-googleapis.com
-googleapis.l.google.com
-gravatar.com
-gstatic.com
-help.ui.xboxlive.com
-hls.ted.com
-i.s-microsoft.com
-imagesak.secureserver.net
-img.vidible.tv
-imgix.net
-imgs.xkcd.com
-instantmessaging-pa.googleapis.com
-ipv6.msftncsi.com
-jsdelivr.net
-jquery.com
-keystone.mwbsys.com
-lastfm-img2.akamaized.net
-live.com
-livepassdl.conviva.com
-log-appfirst.scotiabank.com
-login.live.com
-login.microsoftonline.com
-manifest.googlevideo.com
-messenger.live.com
-microsoftonline.com
-mobile.events.data.microsoft.com
-msedge.api.cdp.microsoft.com
-msftncsi.com
-onedrive.live.com
-office.com
-office.net
-office365.com
-officeclient.microsoft.com
-open.spotify.com
-plex.bz
-plex.tv
-plexapp.com
-players.brightcove.net
-prod.otel.kaizen.nvidia.com
-products.office.com
-raw.githubusercontent.com
-reddit.map.fastly.net
-redirector.gvt1.com
-reminders-pa.googleapis.com
-res.cloudinary.com
-sa.symcb.com
-secure.avangate.com
-secure.brightcove.com
-s3.amazonaws.com
-signal.org
-sonarr.tv
-t.co
-tedcdn.com
-textsecure-service-whispersystems.org
-themoviedb.com
-thetvdb.com
-tinyurl.com
-tlu.dl.delivery.mp.microsoft.com
-tm-gta5-prod.ros.rockstargames.com
-traffic.libsyn.com
-vidible.tv
-virtualearth.net
-wl.spotify.com
-ytimg.com
+# =====================================================
+# AdGuard Home WHITELIST - Clean & Commented
+# Last Updated: January 10, 2026
+# Purpose: Allow essential services that may be blocked by blocklists
+# =====================================================
+
+# ----------------------
+# MICROSOFT ECOSYSTEM
+# Purpose: Core Microsoft services for Windows, Office, OneDrive, Xbox
+# ----------------------
+
+1drv.com                                    # OneDrive file storage
+c.s-microsoft.com                           # Microsoft services CDN
+dl.delivery.mp.microsoft.com                # Windows Update delivery
+dns.msftncsi.com                            # Network Connectivity Status Indicator
+fe3.delivery.dsp.mp.microsoft.com.nsatc.net # Windows Update delivery optimization
+g.live.com                                  # Windows Live services
+geo-prod.do.dsp.mp.microsoft.com            # Windows Update geo-location service
+help.ui.xboxlive.com                        # Xbox Live help/support
+i.s-microsoft.com                           # Microsoft imagery/assets CDN
+ipv6.msftncsi.com                           # IPv6 connectivity check
+live.com                                    # Microsoft Live services
+login.live.com                              # Microsoft account authentication
+login.microsoftonline.com                   # Azure AD / Office 365 authentication
+messenger.live.com                          # Windows Live Messenger (legacy)
+microsoftonline.com                         # Office 365 core services
+msedge.api.cdp.microsoft.com                # Microsoft Edge sync services
+msftncsi.com                                # Network connectivity checks
+office.com                                  # Office web applications
+office.net                                  # Office CDN
+office365.com                               # Office 365 platform
+officeclient.microsoft.com                  # Office client synchronization
+onedrive.live.com                           # OneDrive web interface
+products.office.com                         # Office product catalog
+tlu.dl.delivery.mp.microsoft.com            # Windows Update throttled delivery
+
+# ----------------------
+# GOOGLE ECOSYSTEM
+# Purpose: Core Google services (Search, YouTube, Android, Fonts, APIs)
+# ----------------------
+
+android.clients.google.com                  # Android device services
+android.com                                 # Android OS
+clients.google.com                          # Google client APIs
+cloudflare.com                              # Cloudflare CDN
+cloudfront.net                              # Amazon CloudFront CDN
+dl.google.com                               # Google download services
+firestore.googleapis.com                    # Firebase/Firestore database
+fonts.gstatic.com                           # Google Fonts static content
+googleapis.com                              # Google API platform (core)
+googleapis.l.google.com                     # Google APIs load balancer
+gstatic.com                                 # Google static content CDN
+instantmessaging-pa.googleapis.com          # Google messaging services
+manifest.googlevideo.com                    # YouTube video manifests
+redirector.gvt1.com                         # Google Video Technology redirector
+reminders-pa.googleapis.com                 # Google Reminders API
+ytimg.com                                   # YouTube images/thumbnails
+
+# ----------------------
+# COMMUNICATION / MESSAGING
+# Purpose: Signal, Discord, WhatsApp, messaging platforms
+# ----------------------
+
+contentproxy.signal.org                     # Signal content proxy (privacy protection)
+discordapp.com                              # Discord platform
+giphy-proxy-production.whispersystems.org   # Signal's GIPHY proxy (privacy-preserving)
+giphy.com                                   # GIPHY API (GIFs)
+signal.org                                  # Signal encrypted messaging
+textsecure-service-whispersystems.org       # Signal backend services
+
+# ----------------------
+# SOCIAL MEDIA
+# Purpose: Facebook, Instagram
+# ----------------------
+
+graph.facebook.com                          # Facebook Graph API
+connect.facebook.net                        # Facebook Connect/SDK
+
+# ----------------------
+# MEDIA / STREAMING
+# Purpose: Spotify, Plex, video/audio streaming services
+# ----------------------
+
+open.spotify.com                            # Spotify web player
+plex.bz                                     # Plex short URL service
+plex.tv                                     # Plex media server
+plexapp.com                                 # Plex applications
+wl.spotify.com                              # Spotify web services
+
+# ----------------------
+# CONTENT DELIVERY / INFRASTRUCTURE
+# Purpose: CDNs, image hosting, static content
+# ----------------------
+
+amazonaws.com                               # Amazon Web Services
+bazaarvoice.com                             # Product reviews platform
+brightcove.net                              # Video hosting platform
+cloudflare.com                              # Cloudflare CDN
+cloudfront.net                              # Amazon CloudFront CDN
+edge.api.brightcove.com                     # Brightcove API
+embedly.com                                 # Content embedding service
+geo3.ggpht.com                              # Google geo-distributed content
+gravatar.com                                # Gravatar profile images
+imgix.net                                   # Image optimization/CDN
+jsdelivr.net                                # jsDelivr CDN
+jquery.com                                  # jQuery CDN
+players.brightcove.net                      # Brightcove video players
+res.cloudinary.com                          # Cloudinary image hosting
+s3.amazonaws.com                            # Amazon S3 storage
+
+# ----------------------
+# DEVELOPER / TECHNICAL
+# Purpose: GitHub, repositories, technical services
+# ----------------------
+
+archive.org                                 # Internet Archive
+github.com                                  # GitHub repositories
+github.io                                   # GitHub Pages hosting
+raw.githubusercontent.com                   # GitHub raw content
+
+# ----------------------
+# SECURITY / CERTIFICATES
+# Purpose: Certificate validation, security services
+# ----------------------
+
+keystone.mwbsys.com                         # Malwarebytes keystone services
+sa.symcb.com                                # Symantec certificate services
+
+# ----------------------
+# GAMING
+# Purpose: Game services, updates, Rockstar, Sonarr
+# ----------------------
+
+sonarr.tv                                   # Sonarr TV show management
+tm-gta5-prod.ros.rockstargames.com          # GTA V online services
+
+# ----------------------
+# NVIDIA
+# Purpose: GeForce Experience, driver updates
+# ----------------------
+
+events.gfe.nvidia.com                       # GeForce Experience event logging
+gfwsl.geforce.com                           # GeForce driver update checks
+
+# ----------------------
+# E-COMMERCE / SHOPPING
+# Purpose: Payment processors, shopping platforms
+# ----------------------
+
+secure.avangate.com                         # Avangate payment processor
+imagesak.secureserver.net                   # GoDaddy/Secure Server images
+
+# ----------------------
+# MEDIA / NEWS / EDUCATIONAL
+# Purpose: TED Talks, podcasts, media services
+# ----------------------
+
+hls.ted.com                                 # TED Talks HLS streaming
+img.vidible.tv                              # Vidible video platform
+lastfm-img2.akamaized.net                   # Last.fm album art
+livepassdl.conviva.com                      # Conviva video analytics
+tedcdn.com                                  # TED Talks CDN
+traffic.libsyn.com                          # Libsyn podcast hosting
+vidible.tv                                  # Vidible video platform
+
+# ----------------------
+# DATABASES / REFERENCE
+# Purpose: Movie/TV databases for media management
+# ----------------------
+
+themoviedb.com                              # The Movie Database
+thetvdb.com                                 # The TV Database
+
+# ----------------------
+# URL SHORTENERS
+# Purpose: Link redirection services
+# ----------------------
+
+t.co                                        # Twitter/X URL shortener
+tinyurl.com                                 # TinyURL shortener
+
+# ----------------------
+# MISCELLANEOUS / UTILITIES
+# ----------------------
+
+budget-track.web.app                        # Personal budget tracking app
+imgs.xkcd.com                               # XKCD comic images
+reddit.map.fastly.net                       # Reddit content via Fastly CDN
+virtualearth.net                            # Bing Maps services
+
+# ----------------------
+# BANKING / FINANCIAL
+# ----------------------
+
+log-appfirst.scotiabank.com                 # Scotiabank application logging
