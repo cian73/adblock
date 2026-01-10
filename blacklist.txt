@@ -1,5 +1,11 @@
+# =====================================================
+# AdGuard Home BLOCKLIST - Custom Rules
+# Last Updated: January 10, 2026
+# =====================================================
+
 # ----------------------
-# Internal / DNS Rebinding Protection
+# INTERNAL / DNS REBINDING PROTECTION
+# Purpose: Prevent DNS rebinding attacks
 # ----------------------
 
 ## IPv4 Private Networks
@@ -22,271 +28,339 @@
 /^([a-z0-9\-]+\.)?(localhost|localdomain|ip6-localhost)$/
 
 # ----------------------
-# Ads / Ad Networks
+# CUSTOM HIGH-PRIORITY BLOCKS
+# Purpose: Specific trackers caught in the wild
 # ----------------------
 
-## AdColony
-adc3-launch.adcolony.com
-ads30.adcolony.com
-events3alt.adcolony.com
-wd.adcolony.com
+||track.razernative.com^$important                  # Razer tracking
+||sync.oraki.io^$important                          # Oraki synchronization
+||audienceexposure.com^$important                   # Audience tracking
 
-## Amazon Ads
-advertising-api-eu.amazon.com
-amazonaax.com
-affiliationjs.s3.amazonaws.com
+# ----------------------
+# NETWORK NOISE REDUCTION
+# Purpose: Eliminate unnecessary DNS queries
+# ----------------------
 
-## Apple Ads
-advertising.apple.com
-xp.apple.com
+wpad.lan                                            # Windows proxy auto-discovery
+daemon.nanoleaf.me                                  # Nanoleaf panels
 
-## Chartboost / Tapjoy / Supersonic
-init.supersonicads.com
-live.chartboost.com
-ws.tapjoyads.com
+# ----------------------
+# ADVERTISING NETWORKS
+# Purpose: Block ad delivery platforms
+# ----------------------
 
-## DoubleClick / Google Ads
-ad.doubleclick.net
-dai.google.com
-m.doubleclick.net
-mediavisor.doubleclick.net
-pagead2.googlesyndication.com
-pubads.g.doubleclick.net
-securepubads.g.doubleclick.net
-static.doubleclick.net
-stats.g.doubleclick.net
-tpc.googlesyndication.com
+## Google / DoubleClick
+ad.doubleclick.net                                  # DoubleClick ad serving
+dai.google.com                                      # Dynamic Ad Insertion
+m.doubleclick.net                                   # Mobile DoubleClick
+mediavisor.doubleclick.net                          # DoubleClick media advisor
+pagead2.googlesyndication.com                       # Google AdSense
+pubads.g.doubleclick.net                            # Publisher ads
+securepubads.g.doubleclick.net                      # Secure publisher ads
+static.doubleclick.net                              # DoubleClick static content
+stats.g.doubleclick.net                             # DoubleClick statistics
+tpc.googlesyndication.com                           # Third-party syndication
 
-## ExoClick
-ads.exoclick.com
-exoclick.com
+## Amazon
+advertising-api-eu.amazon.com                       # Amazon advertising API
+affiliationjs.s3.amazonaws.com                      # Amazon affiliate scripts
+amazonaax.com                                       # Amazon Audience Exchange
+aax-us-east-retail-direct.amazon.com                # Amazon ad exchange
 
-## Magsrv
-a.magsrv.com
-magsrv.com
-s.magsrv.com
+## Microsoft
+settings-win.data.microsoft.com                     # Windows ads/telemetry
 
-## Microsoft Ads
-settings-win.data.microsoft.com
+## Apple
+advertising.apple.com                               # Apple advertising
+xp.apple.com                                        # Apple experience
 
-## Pinterest Ads
-ads.pinterest.com
+## YouTube
+ads.youtube.com                                     # YouTube ads
+redirector.googlevideo.com                          # Video ad redirector
+s.youtube.com                                       # YouTube tracking
+youtubei.googleapis.com                             # YouTube internal API
 
-## SnapAds
-ase.adserver.snapads.com
-euw.adserver.snapads.com
-snapads.com
-usc.adserver.snapads.com
-use.adserver.snapads.com
+## TikTok
+ads-api.tiktok.com                                  # TikTok advertising API
+ads.tiktok.com                                      # TikTok ads
+advertising.tiktok.com                              # TikTok advertising platform
+business-api.tiktok.com                             # TikTok business API
 
-## TikTok Ads
-ads-api.tiktok.com
-business-api.tiktok.com
+## Snapchat
+adsapi.snapchat.com                                 # Snapchat ads API
+ase.adserver.snapads.com                            # Snapchat ad server
+euw.adserver.snapads.com                            # Snapchat ad server EU
+snapads.com                                         # Snapchat ads
+usc.adserver.snapads.com                            # Snapchat ad server US Central
+use.adserver.snapads.com                            # Snapchat ad server US East
 
-## TrafficStars
-trafficstars.com
+## Twitter/X
+ads-api.twitter.com                                 # Twitter advertising API
+ads.x.com                                           # X.com advertising
 
-## TwinRD Engine
-ad.twinrdengine.com
-twinrdengine.com
+## Pinterest
+ads.pinterest.com                                   # Pinterest advertising
 
-## Twitter/X Ads
-ads-api.twitter.com
-ads.x.com
+## Mobile Ad Networks
+adc3-launch.adcolony.com                            # AdColony launch
+ads30.adcolony.com                                  # AdColony ads
+events3alt.adcolony.com                             # AdColony events
+init.supersonicads.com                              # Supersonic Ads
+live.chartboost.com                                 # Chartboost
+wd.adcolony.com                                     # AdColony watchdog
+ws.tapjoyads.com                                    # Tapjoy ads
 
-## YouTube Ads
-ads.youtube.com
-redirector.googlevideo.com
-s.youtube.com
+## Adult Content Ads
+ads.exoclick.com                                    # ExoClick ads
+a.magsrv.com                                        # Magsrv server A
+exoclick.com                                        # ExoClick
+magsrv.com                                          # Magsrv
+s.magsrv.com                                        # Magsrv server S
+trafficstars.com                                    # TrafficStars
 
 ## Smart TV Ads
-ngfts.lge.com
-us.ad.lgsmartad.com
-us.info.lgsmartad.com
-us.lgsmartad.com
+ngfts.lge.com                                       # LG TV ads
+us.ad.lgsmartad.com                                 # LG Smart Ad US
+us.info.lgsmartad.com                               # LG Smart Ad info
+us.lgsmartad.com                                    # LG Smart Ad
 
-## Other Ad Networks & Platforms
-2giga.link
-adsrvr.org
-cdn.tsyndicate.com
-getcam4.com
-go.rmhfrtnd.com
-greatis.com
-m.hue2b.com
-rmhfrtnd.com
-smartclip.com
-smartclip.net
-ssl.p.jwpcdn.com
-xlivrdr.com
-youtubei.googleapis.com
-
-# ----------------------
-# Mobile Attribution / SDK Tracking
-# ----------------------
-
-## Adjust
-app.adjust.com
-
-## AppsFlyer
-app.appsflyer.com
+## Other Ad Networks
+2giga.link                                          # Ad redirect
+ad.twinrdengine.com                                 # TwinRD ads
+adsrvr.org                                          # Ad server
+cdn.tsyndicate.com                                  # TSyndicate CDN
+getcam4.com                                         # Cam4 ads
+go.rmhfrtnd.com                                     # Ad redirect
+greatis.com                                         # Greatis ads
+m.hue2b.com                                         # Hue2b mobile ads
+rmhfrtnd.com                                        # Ad redirect network
+smartclip.com                                       # SmartClip
+smartclip.net                                       # SmartClip network
+ssl.p.jwpcdn.com                                    # JW Player ads
+twinrdengine.com                                    # TwinRD
+xlivrdr.com                                         # Ad redirector
 
 # ----------------------
-# Affiliate Marketing
+# MOBILE ATTRIBUTION / SDK TRACKING
+# Purpose: Block mobile app attribution and tracking SDKs
 # ----------------------
 
-## Awin
-www.awin1.com
-
-## Impact
-api.impact.com
-impact.com
+app.adjust.com                                      # Adjust attribution
+app.appsflyer.com                                   # AppsFlyer attribution
 
 # ----------------------
-# Analytics / Telemetry
+# AFFILIATE MARKETING
+# Purpose: Block affiliate tracking platforms
 # ----------------------
+
+api.impact.com                                      # Impact affiliate API
+impact.com                                          # Impact affiliate
+www.awin1.com                                       # Awin affiliate
+
+# ----------------------
+# ANALYTICS / TELEMETRY
+# Purpose: Block analytics platforms and telemetry collection
+# ----------------------
+
+## Google Telemetry
+beacons.gvt2.com                                    # Google beacons
+beacons2.gvt2.com                                   # Google beacons
+beacons3.gvt2.com                                   # Google beacons
+beacons4.gvt2.com                                   # Google beacons
+beacons5.gvt2.com                                   # Google beacons
+beacons5.gvt3.com                                   # Google beacons GVT3
+clienttracing-pa.googleapis.com                     # Client tracing
+crashlyticsreports-pa.googleapis.com                # Crash reports
+federatedcompute-pa.googleapis.com                  # Federated ML training
+logsink.devices.nest.com                            # Nest/Home telemetry
+ogads-pa.clients6.google.com                        # Ad optimization
 
 ## Google Analytics
-analytics.s3.amazonaws.com
-analyticsengine.s3.amazonaws.com
+analytics.s3.amazonaws.com                          # Google Analytics S3
+analyticsengine.s3.amazonaws.com                    # Analytics engine
+
+## Amazon Telemetry
+fls-na.amazon.ca                                    # Amazon FLS Canada
+fls-na.amazon.com                                   # Amazon FLS
+ipv6.unagi-na.amazon.com                            # Amazon Unagi IPv6
+unagi-na.amazon.com                                 # Amazon Unagi telemetry
+unagi.amazon.ca                                     # Amazon Unagi Canada
+
+## Microsoft Telemetry
+fp.msedge.net                                       # Edge fingerprinting
+mobile.pipe.aria.microsoft.com                      # Aria telemetry
+watson.events.data.microsoft.com                    # Watson events
+
+## NVIDIA Telemetry
+lightstep.kaizen.nvidia.com                         # Lightstep tracing
+telemetry.gfe.nvidia.com                            # GeForce Experience telemetry
+
+## Cloudflare Telemetry
+a.nel.cloudflare.com                                # Network Error Logging
 
 ## LuckyOrange
-api.luckyorange.com
-cdn.luckyorange.com
-cs.luckyorange.net
-luckyorange.com
-realtime.luckyorange.com
-settings.luckyorange.net
-upload.luckyorange.net
-w1.luckyorange.com
+api.luckyorange.com                                 # LuckyOrange API
+cdn.luckyorange.com                                 # LuckyOrange CDN
+cs.luckyorange.net                                  # LuckyOrange customer service
+luckyorange.com                                     # LuckyOrange
+realtime.luckyorange.com                            # LuckyOrange real-time
+settings.luckyorange.net                            # LuckyOrange settings
+upload.luckyorange.net                              # LuckyOrange upload
+w1.luckyorange.com                                  # LuckyOrange widget
 
 ## Mouseflow
-api.mouseflow.com
-cdn-test.mouseflow.com
-cdn.mouseflow.com
-gtm.mouseflow.com
-mouseflow.com
-o2.mouseflow.com
+api.mouseflow.com                                   # Mouseflow API
+cdn-test.mouseflow.com                              # Mouseflow test CDN
+cdn.mouseflow.com                                   # Mouseflow CDN
+gtm.mouseflow.com                                   # Mouseflow GTM
+mouseflow.com                                       # Mouseflow
+o2.mouseflow.com                                    # Mouseflow server
 
 ## Pinterest Analytics
-analytics.pinterest.com
-log.pinterest.com
-trk.pinterest.com
+analytics.pinterest.com                             # Pinterest analytics
+log.pinterest.com                                   # Pinterest logging
+trk.pinterest.com                                   # Pinterest tracking
 
 ## Reddit Analytics
-events.reddit.com
-events.redditmedia.com
+events.reddit.com                                   # Reddit event tracking
+events.redditmedia.com                              # Reddit media events
 
 ## Snapchat Analytics
-adsapi.snapchat.com
-app-analytics.snapchat.com
-app-analytics-v2.snapchat.com
-asia-southeast1-gcp.api.snapchat.com
-aws-cf.api.snapchat.com
-us-east1-aws.api.snapchat.com
+app-analytics.snapchat.com                          # Snapchat app analytics
+app-analytics-v2.snapchat.com                       # Snapchat analytics v2
+asia-southeast1-gcp.api.snapchat.com                # Snapchat Asia API
+aws-cf.api.snapchat.com                             # Snapchat CloudFront API
+us-east1-aws.api.snapchat.com                       # Snapchat US East API
 
 ## TikTok Analytics
-analytics.tiktok.com
-log.byteoversea.com
+analytics.tiktok.com                                # TikTok analytics
+frontier.tiktokv.com                                # TikTok frontier
+log.byteoversea.com                                 # ByteDance logging
+mon-boot.tiktokv.com                                # TikTok boot monitoring
+mon22-normal-useast1a.tiktokv.com                   # TikTok monitoring
+mon31-normal-useast1a.tiktokv.com                   # TikTok monitoring
+tnc-boot.tiktokv.com                                # TikTok boot tracking
+tnc0-normal-alisg.tiktokv.com                       # TikTok terms tracking
 
 ## Xiaomi Analytics
-api.ad.xiaomi.com
-data.mistat.india.xiaomi.com
-data.mistat.intl.xiaomi.com
-data.mistat.rus.xiaomi.com
-data.mistat.xiaomi.com
-sdkconfig.ad.intl.xiaomi.com
-sdkconfig.ad.xiaomi.com
-tracking.intl.miui.com
-tracking.rus.miui.com
+api.ad.xiaomi.com                                   # Xiaomi advertising API
+data.mistat.india.xiaomi.com                        # Xiaomi India statistics
+data.mistat.intl.xiaomi.com                         # Xiaomi international stats
+data.mistat.rus.xiaomi.com                          # Xiaomi Russia statistics
+data.mistat.xiaomi.com                              # Xiaomi statistics
+sdkconfig.ad.intl.xiaomi.com                        # Xiaomi international ad SDK
+sdkconfig.ad.xiaomi.com                             # Xiaomi ad SDK config
+tracking.intl.miui.com                              # MIUI international tracking
+tracking.rus.miui.com                               # MIUI Russia tracking
 
 ## Yandex Analytics
-adfstat.yandex.ru
-appmetrica.yandex.ru
-extmaps-api.yandex.net
-metrika.yandex.ru
-offerwall.yandex.net
+adfstat.yandex.ru                                   # Yandex ad statistics
+appmetrica.yandex.ru                                # Yandex app metrics
+extmaps-api.yandex.net                              # Yandex maps API
+metrika.yandex.ru                                   # Yandex Metrika
+offerwall.yandex.net                                # Yandex offer wall
+
+## Ghostery Telemetry
+anonymous-communication.ghostery.net                # Ghostery tracking
+
+## Netflix Telemetry
+logs.netflix.com                                    # Netflix logging
 
 ## Smart TV / Device Telemetry
-androidtvchannels-pa.googleapis.com
-androidtvwatsonfe-pa.googleapis.com
-device-metrics-us.amazon.com
-grs.hicloud.com
-logbak.hicloud.com
-logservice.hicloud.com
-logservice1.hicloud.com
-metrics.data.hicloud.com
-metrics2.data.hicloud.com
-smartshare.lgtvsdp.com
-us.cdpsvc.lgtvcommon.com
-us.homeprv.lgtvcommon.com
-us.ibs.lgappstv.com
-us.nudge.lgtvcommon.com
-us.rdx2.lgtvsdp.com
-us.service.lgtvcommon.com
+androidtvchannels-pa.googleapis.com                 # Android TV channels
+androidtvwatsonfe-pa.googleapis.com                 # Android TV Watson
+device-metrics-us.amazon.com                        # Amazon device metrics
+grs.hicloud.com                                     # Huawei cloud registration
+logbak.hicloud.com                                  # Huawei cloud log backup
+logservice.hicloud.com                              # Huawei cloud logging
+logservice1.hicloud.com                             # Huawei cloud logging alt
+metrics.data.hicloud.com                            # Huawei cloud metrics
+metrics2.data.hicloud.com                           # Huawei cloud metrics alt
+smartshare.lgtvsdp.com                              # LG TV smart share
+us.cdpsvc.lgtvcommon.com                            # LG TV CDP service
+us.homeprv.lgtvcommon.com                           # LG TV home preview
+us.ibs.lgappstv.com                                 # LG TV app store
+us.nudge.lgtvcommon.com                             # LG TV nudge service
+us.rdx2.lgtvsdp.com                                 # LG TV RDX service
+us.service.lgtvcommon.com                           # LG TV common service
 
 ## Roku / TV Telemetry
-austin.logs.roku.com
-cooper.logs.roku.com
-display.ravm.tv
-liberty.logs.roku.com
-midland.logs.roku.com
-mobile.logs.roku.com
-ravm.tv
-scribe.logs.roku.com
+austin.logs.roku.com                                # Roku Austin logging
+cooper.logs.roku.com                                # Roku Cooper logging
+display.ravm.tv                                     # RAVM display tracking
+liberty.logs.roku.com                               # Roku Liberty logging
+midland.logs.roku.com                               # Roku Midland logging
+mobile.logs.roku.com                                # Roku mobile logging
+ravm.tv                                             # RAVM TV tracking
+scribe.logs.roku.com                                # Roku Scribe logging
 
 ## Alphonso / TVInteractive
-alphonso.tv
-api.thetake.com
-control-tvinteractive.tv
-control2.tvinteractive.tv
-control-zoo-dai-default.tvinteractive.tv
-mcp.tvinteractive.tv
-tv.ads.spotx.tv
-tvmeta-dynamic.tvinteractive.tv
+alphonso.tv                                         # Alphonso ACR tracking
+api.thetake.com                                     # TheTake API
+control-tvinteractive.tv                            # TVInteractive control
+control2.tvinteractive.tv                           # TVInteractive control v2
+control-zoo-dai-default.tvinteractive.tv            # TVInteractive DAI
+mcp.tvinteractive.tv                                # TVInteractive MCP
+tv.ads.spotx.tv                                     # SpotX TV ads
+tvmeta-dynamic.tvinteractive.tv                     # TVInteractive metadata
 
 # ----------------------
-# Adult / NSFW Content
+# SKYPE
+# Purpose: Complete Skype blocking
+# ----------------------
+
+a.config.skype.com                                  # Skype config subdomain
+api.skype.com                                       # Skype API
+config.edge.skype.com                               # Skype Edge config
+config.skype.com                                    # Skype configuration
+s.gateway.messenger.live.com                        # Skype messaging gateway
+
+# ----------------------
+# ADULT / NSFW CONTENT
+# Purpose: Block adult content sites
 # ----------------------
 
 ## Cam Sites
-chatwithwebcams.com
-getcam4.com
-hotfree123.com
-join.getcam4.com
-landers.cam4.com
-xhamsterlive.stream
+chatwithwebcams.com                                 # Adult webcam chat
+getcam4.com                                         # Cam4 ads/redirects
+hotfree123.com                                      # Adult content
+join.getcam4.com                                    # Cam4 signup
+landers.cam4.com                                    # Cam4 landing pages
+xhamsterlive.stream                                 # Adult streaming
 
 ## Adult Video Sites
-chaturbate.com
-snapshots.xcdnpro.com
+chaturbate.com                                      # Adult streaming platform
+snapshots.xcdnpro.com                               # Adult content snapshots
 
 # ----------------------
-# MAY BREAK THINGS?
+# MAY BREAK THINGS
+# Purpose: Blocks that might affect functionality
 # ----------------------
 
 ## Privacy & Consent Management
-consent.trustarc.com
-cdn.privacy-mgmt.com
+cdn.privacy-mgmt.com                                # Privacy management platform
+consent.trustarc.com                                # TrustArc consent banners
 
 ## Customer Support / Chat
-widget.intercom.io
+widget.intercom.io                                  # Intercom chat widget
 
 ## Error Reporting / Developer Tools
-app.bugsnag.com
-notify.bugsnag.com
-sessions.bugsnag.com
-airbrake.io
-collect.airbrake.io
-errorreporting.googleapis.com
-logging.googleapis.com
-trace.googleapis.com
-api.honeybadger.io
-api.raygun.com
-app.getsentry.com
-browser.sentry-cdn.com
+airbrake.io                                         # Airbrake error tracking
+api.honeybadger.io                                  # Honeybadger error tracking
+api.raygun.com                                      # Raygun error tracking
+app.bugsnag.com                                     # Bugsnag error reporting
+app.getsentry.com                                   # Sentry error tracking
+browser.sentry-cdn.com                              # Sentry browser SDK
+collect.airbrake.io                                 # Airbrake data collection
+errorreporting.googleapis.com                       # Google error reporting
+logging.googleapis.com                              # Google logging service
+notify.bugsnag.com                                  # Bugsnag notifications
+sessions.bugsnag.com                                # Bugsnag session tracking
+trace.googleapis.com                                # Google trace service
 
-## Social Media Widgets & APIs
-connect.facebook.net
-graph.facebook.com
-widgets.pinterest.com
-api.vk.com
+## NVIDIA Telemetry
+prod.otel.kaizen.nvidia.com                         # NVIDIA OpenTelemetry
+
+## Social Media Widgets
+api.vk.com                                          # VK.com API
+widgets.pinterest.com                               # Pinterest widgets
