@@ -168,7 +168,7 @@ beacons2.gvt2.com                                   # Google beacons
 beacons3.gvt2.com                                   # Google beacons
 beacons4.gvt2.com                                   # Google beacons
 beacons5.gvt2.com                                   # Google beacons
-beacons5.gvt3.com                                   # Google beacons GVT3
+beacons5.gvt3.com                                   # Google beacons
 clienttracing-pa.googleapis.com                     # Client tracing
 crashlyticsreports-pa.googleapis.com                # Crash reports
 federatedcompute-pa.googleapis.com                  # Federated ML training
@@ -176,7 +176,7 @@ logsink.devices.nest.com                            # Nest/Home telemetry
 ogads-pa.clients6.google.com                        # Ad optimization
 
 ## Google Analytics
-analytics.s3.amazonaws.com                          # Google Analytics S3
+analytics.s3.amazonaws.com                          # Google Analytics
 analyticsengine.s3.amazonaws.com                    # Analytics engine
 
 ## Amazon Telemetry
@@ -193,6 +193,7 @@ watson.events.data.microsoft.com                    # Watson events
 
 ## NVIDIA Telemetry
 lightstep.kaizen.nvidia.com                         # Lightstep tracing
+prod.otel.kaizen.nvidia.com                         # NVIDIA OpenTelemetry
 telemetry.gfe.nvidia.com                            # GeForce Experience telemetry
 
 ## Cloudflare Telemetry
@@ -266,6 +267,20 @@ anonymous-communication.ghostery.net                # Ghostery tracking
 ## Netflix Telemetry
 logs.netflix.com                                    # Netflix logging
 
+## Developer Error Reporting
+airbrake.io                                         # Airbrake error tracking
+api.honeybadger.io                                  # Honeybadger error tracking
+api.raygun.com                                      # Raygun error tracking
+app.bugsnag.com                                     # Bugsnag error reporting
+app.getsentry.com                                   # Sentry error tracking
+browser.sentry-cdn.com                              # Sentry browser SDK
+collect.airbrake.io                                 # Airbrake data collection
+errorreporting.googleapis.com                       # Google error reporting
+logging.googleapis.com                              # Google logging service
+notify.bugsnag.com                                  # Bugsnag notifications
+sessions.bugsnag.com                                # Bugsnag session tracking
+trace.googleapis.com                                # Google trace service
+
 ## Smart TV / Device Telemetry
 androidtvchannels-pa.googleapis.com                 # Android TV channels
 androidtvwatsonfe-pa.googleapis.com                 # Android TV Watson
@@ -305,6 +320,22 @@ tv.ads.spotx.tv                                     # SpotX TV ads
 tvmeta-dynamic.tvinteractive.tv                     # TVInteractive metadata
 
 # ----------------------
+# PRIVACY MANAGEMENT
+# Purpose: Block cookie consent and privacy platforms
+# ----------------------
+
+cdn.privacy-mgmt.com                                # Privacy management platform
+consent.trustarc.com                                # TrustArc consent banners
+
+# ----------------------
+# SOCIAL MEDIA WIDGETS
+# Purpose: Block social media embed widgets
+# ----------------------
+
+api.vk.com                                          # VK.com API
+widgets.pinterest.com                               # Pinterest widgets
+
+# ----------------------
 # SKYPE
 # Purpose: Complete Skype blocking
 # ----------------------
@@ -334,33 +365,7 @@ snapshots.xcdnpro.com                               # Adult content snapshots
 
 # ----------------------
 # MAY BREAK THINGS
-# Purpose: Blocks that might affect functionality
+# Purpose: Known to break website functionality
 # ----------------------
 
-## Privacy & Consent Management
-cdn.privacy-mgmt.com                                # Privacy management platform
-consent.trustarc.com                                # TrustArc consent banners
-
-## Customer Support / Chat
 widget.intercom.io                                  # Intercom chat widget
-
-## Error Reporting / Developer Tools
-airbrake.io                                         # Airbrake error tracking
-api.honeybadger.io                                  # Honeybadger error tracking
-api.raygun.com                                      # Raygun error tracking
-app.bugsnag.com                                     # Bugsnag error reporting
-app.getsentry.com                                   # Sentry error tracking
-browser.sentry-cdn.com                              # Sentry browser SDK
-collect.airbrake.io                                 # Airbrake data collection
-errorreporting.googleapis.com                       # Google error reporting
-logging.googleapis.com                              # Google logging service
-notify.bugsnag.com                                  # Bugsnag notifications
-sessions.bugsnag.com                                # Bugsnag session tracking
-trace.googleapis.com                                # Google trace service
-
-## NVIDIA Telemetry
-prod.otel.kaizen.nvidia.com                         # NVIDIA OpenTelemetry
-
-## Social Media Widgets
-api.vk.com                                          # VK.com API
-widgets.pinterest.com                               # Pinterest widgets
