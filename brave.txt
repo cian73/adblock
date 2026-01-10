@@ -1,23 +1,25 @@
+! =====================================================
+! Brave Browser BLOCKLIST - Custom Rules
+! Last Updated: January 10, 2026
+! =====================================================
+
+! ----------------------
+! Custom High-Priority Blocks
+! ----------------------
+||track.razernative.com^$important
+||sync.oraki.io^$important
+||audienceexposure.com^$important
+
+! ----------------------
+! Network Noise Reduction
+! ----------------------
+||wpad.lan^
+||daemon.nanoleaf.me^
+
 ! ----------------------
 ! Ads / Ad Networks
 ! ----------------------
-! AdColony
-||adc3-launch.adcolony.com^
-||ads30.adcolony.com^
-||events3alt.adcolony.com^
-||wd.adcolony.com^
-! Amazon Ads
-||advertising-api-eu.amazon.com^
-||amazonaax.com^
-||affiliationjs.s3.amazonaws.com^
-! Apple Ads
-||advertising.apple.com^
-||xp.apple.com^
-! Chartboost / Tapjoy / Supersonic
-||init.supersonicads.com^
-||live.chartboost.com^
-||ws.tapjoyads.com^
-! DoubleClick / Google Ads
+! Google / DoubleClick
 ||ad.doubleclick.net^
 ||dai.google.com^
 ||m.doubleclick.net^
@@ -28,6 +30,47 @@
 ||static.doubleclick.net^
 ||stats.g.doubleclick.net^
 ||tpc.googlesyndication.com^
+! Amazon
+||advertising-api-eu.amazon.com^
+||affiliationjs.s3.amazonaws.com^
+||amazonaax.com^
+||aax-us-east-retail-direct.amazon.com^
+! Microsoft
+||settings-win.data.microsoft.com^
+! Apple
+||advertising.apple.com^
+||xp.apple.com^
+! YouTube
+||ads.youtube.com^
+||redirector.googlevideo.com^
+||s.youtube.com^
+||youtubei.googleapis.com^
+! TikTok
+||ads-api.tiktok.com^
+||ads.tiktok.com^
+||advertising.tiktok.com^
+||business-api.tiktok.com^
+! Snapchat
+||adsapi.snapchat.com^
+||ase.adserver.snapads.com^
+||euw.adserver.snapads.com^
+||snapads.com^
+||usc.adserver.snapads.com^
+||use.adserver.snapads.com^
+! Twitter/X
+||ads-api.twitter.com^
+||ads.x.com^
+! Pinterest
+||ads.pinterest.com^
+! AdColony
+||adc3-launch.adcolony.com^
+||ads30.adcolony.com^
+||events3alt.adcolony.com^
+||wd.adcolony.com^
+! Chartboost / Tapjoy / Supersonic
+||init.supersonicads.com^
+||live.chartboost.com^
+||ws.tapjoyads.com^
 ! ExoClick
 ||ads.exoclick.com^
 ||exoclick.com^
@@ -35,37 +78,17 @@
 ||a.magsrv.com^
 ||magsrv.com^
 ||s.magsrv.com^
-! Microsoft Ads
-||settings-win.data.microsoft.com^
-! Pinterest Ads
-||ads.pinterest.com^
-! SnapAds
-||ase.adserver.snapads.com^
-||euw.adserver.snapads.com^
-||snapads.com^
-||usc.adserver.snapads.com^
-||use.adserver.snapads.com^
-! TikTok Ads
-||ads-api.tiktok.com^
-||business-api.tiktok.com^
 ! TrafficStars
 ||trafficstars.com^
 ! TwinRD Engine
 ||ad.twinrdengine.com^
 ||twinrdengine.com^
-! Twitter/X Ads
-||ads-api.twitter.com^
-||ads.x.com^
-! YouTube Ads
-||ads.youtube.com^
-||redirector.googlevideo.com^
-||s.youtube.com^
 ! Smart TV Ads
 ||ngfts.lge.com^
 ||us.ad.lgsmartad.com^
 ||us.info.lgsmartad.com^
 ||us.lgsmartad.com^
-! Other Ad Networks & Platforms
+! Other Ad Networks
 ||2giga.link^
 ||adsrvr.org^
 ||cdn.tsyndicate.com^
@@ -78,28 +101,54 @@
 ||smartclip.net^
 ||ssl.p.jwpcdn.com^
 ||xlivrdr.com^
-||youtubei.googleapis.com^
+
 ! ----------------------
 ! Mobile Attribution / SDK Tracking
 ! ----------------------
-! Adjust
 ||app.adjust.com^
-! AppsFlyer
 ||app.appsflyer.com^
+
 ! ----------------------
 ! Affiliate Marketing
 ! ----------------------
-! Awin
-||www.awin1.com^
-! Impact
 ||api.impact.com^
 ||impact.com^
+||www.awin1.com^
+
 ! ----------------------
 ! Analytics / Telemetry
 ! ----------------------
+! Google Telemetry
+||beacons.gvt2.com^
+||beacons2.gvt2.com^
+||beacons3.gvt2.com^
+||beacons4.gvt2.com^
+||beacons5.gvt2.com^
+||beacons5.gvt3.com^
+||clienttracing-pa.googleapis.com^
+||crashlyticsreports-pa.googleapis.com^
+||federatedcompute-pa.googleapis.com^
+||logsink.devices.nest.com^
+||ogads-pa.clients6.google.com^
 ! Google Analytics
 ||analytics.s3.amazonaws.com^
 ||analyticsengine.s3.amazonaws.com^
+! Amazon Telemetry
+||fls-na.amazon.ca^
+||fls-na.amazon.com^
+||ipv6.unagi-na.amazon.com^
+||unagi-na.amazon.com^
+||unagi.amazon.ca^
+! Microsoft Telemetry
+||fp.msedge.net^
+||mobile.pipe.aria.microsoft.com^
+||watson.events.data.microsoft.com^
+! NVIDIA Telemetry
+||lightstep.kaizen.nvidia.com^
+||prod.otel.kaizen.nvidia.com^
+||telemetry.gfe.nvidia.com^
+! Cloudflare Telemetry
+||a.nel.cloudflare.com^
 ! LuckyOrange
 ||api.luckyorange.com^
 ||cdn.luckyorange.com^
@@ -124,7 +173,6 @@
 ||events.reddit.com^
 ||events.redditmedia.com^
 ! Snapchat Analytics
-||adsapi.snapchat.com^
 ||app-analytics.snapchat.com^
 ||app-analytics-v2.snapchat.com^
 ||asia-southeast1-gcp.api.snapchat.com^
@@ -132,7 +180,13 @@
 ||us-east1-aws.api.snapchat.com^
 ! TikTok Analytics
 ||analytics.tiktok.com^
+||frontier.tiktokv.com^
 ||log.byteoversea.com^
+||mon-boot.tiktokv.com^
+||mon22-normal-useast1a.tiktokv.com^
+||mon31-normal-useast1a.tiktokv.com^
+||tnc-boot.tiktokv.com^
+||tnc0-normal-alisg.tiktokv.com^
 ! Xiaomi Analytics
 ||api.ad.xiaomi.com^
 ||data.mistat.india.xiaomi.com^
@@ -149,6 +203,23 @@
 ||extmaps-api.yandex.net^
 ||metrika.yandex.ru^
 ||offerwall.yandex.net^
+! Ghostery Telemetry
+||anonymous-communication.ghostery.net^
+! Netflix Telemetry
+||logs.netflix.com^
+! Developer Error Reporting
+||airbrake.io^
+||api.honeybadger.io^
+||api.raygun.com^
+||app.bugsnag.com^
+||app.getsentry.com^
+||browser.sentry-cdn.com^
+||collect.airbrake.io^
+||errorreporting.googleapis.com^
+||logging.googleapis.com^
+||notify.bugsnag.com^
+||sessions.bugsnag.com^
+||trace.googleapis.com^
 ! Smart TV / Device Telemetry
 ||androidtvchannels-pa.googleapis.com^
 ||androidtvwatsonfe-pa.googleapis.com^
@@ -184,6 +255,28 @@
 ||mcp.tvinteractive.tv^
 ||tv.ads.spotx.tv^
 ||tvmeta-dynamic.tvinteractive.tv^
+
+! ----------------------
+! Privacy Management
+! ----------------------
+||cdn.privacy-mgmt.com^
+||consent.trustarc.com^
+
+! ----------------------
+! Social Media Widgets
+! ----------------------
+||api.vk.com^
+||widgets.pinterest.com^
+
+! ----------------------
+! Skype
+! ----------------------
+||a.config.skype.com^
+||api.skype.com^
+||config.edge.skype.com^
+||config.skype.com^
+||s.gateway.messenger.live.com^
+
 ! ----------------------
 ! Adult / NSFW Content
 ! ----------------------
@@ -197,28 +290,8 @@
 ! Adult Video Sites
 ||chaturbate.com^
 ||snapshots.xcdnpro.com^
+
 ! ----------------------
-! MAY BREAK THINGS?
+! MAY BREAK THINGS
 ! ----------------------
-! Privacy & Consent Management
-||consent.trustarc.com^
-||cdn.privacy-mgmt.com^
-! Customer Support / Chat
 ||widget.intercom.io^
-! Error Reporting / Developer Tools
-||app.bugsnag.com^
-||notify.bugsnag.com^
-||sessions.bugsnag.com^
-||airbrake.io^
-||collect.airbrake.io^
-||errorreporting.googleapis.com^
-||logging.googleapis.com^
-||trace.googleapis.com^
-||api.honeybadger.io^
-||api.raygun.com^
-||app.getsentry.com^
-||browser.sentry-cdn.com^
-||connect.facebook.net^
-||graph.facebook.com^
-||widgets.pinterest.com^
-||api.vk.com^
