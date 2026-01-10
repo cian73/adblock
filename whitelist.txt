@@ -22,7 +22,7 @@ ipv6.msftncsi.com                           # IPv6 connectivity check
 live.com                                    # Microsoft Live services
 login.live.com                              # Microsoft account authentication
 login.microsoftonline.com                   # Azure AD / Office 365 authentication
-messenger.live.com                          # Windows Live Messenger (legacy)
+messenger.live.com                          # Windows Live Messenger
 microsoftonline.com                         # Office 365 core services
 msedge.api.cdp.microsoft.com                # Microsoft Edge sync services
 msftncsi.com                                # Network connectivity checks
@@ -36,60 +36,28 @@ tlu.dl.delivery.mp.microsoft.com            # Windows Update throttled delivery
 
 # ----------------------
 # GOOGLE ECOSYSTEM
-# Purpose: Core Google services (Search, YouTube, Android, Fonts, APIs)
+# Purpose: Core Google services for Search, YouTube, Android, Fonts, APIs
 # ----------------------
 
 android.clients.google.com                  # Android device services
 android.com                                 # Android OS
 clients.google.com                          # Google client APIs
-cloudflare.com                              # Cloudflare CDN
-cloudfront.net                              # Amazon CloudFront CDN
 dl.google.com                               # Google download services
 firestore.googleapis.com                    # Firebase/Firestore database
 fonts.gstatic.com                           # Google Fonts static content
-googleapis.com                              # Google API platform (core)
+googleapis.com                              # Google API platform
 googleapis.l.google.com                     # Google APIs load balancer
 gstatic.com                                 # Google static content CDN
 instantmessaging-pa.googleapis.com          # Google messaging services
 manifest.googlevideo.com                    # YouTube video manifests
 redirector.gvt1.com                         # Google Video Technology redirector
 reminders-pa.googleapis.com                 # Google Reminders API
+geo3.ggpht.com                              # Google geo-distributed content
 ytimg.com                                   # YouTube images/thumbnails
 
 # ----------------------
-# COMMUNICATION / MESSAGING
-# Purpose: Signal, Discord, WhatsApp, messaging platforms
-# ----------------------
-
-contentproxy.signal.org                     # Signal content proxy (privacy protection)
-discordapp.com                              # Discord platform
-giphy-proxy-production.whispersystems.org   # Signal's GIPHY proxy (privacy-preserving)
-giphy.com                                   # GIPHY API (GIFs)
-signal.org                                  # Signal encrypted messaging
-textsecure-service-whispersystems.org       # Signal backend services
-
-# ----------------------
-# SOCIAL MEDIA
-# Purpose: Facebook, Instagram
-# ----------------------
-
-graph.facebook.com                          # Facebook Graph API
-connect.facebook.net                        # Facebook Connect/SDK
-
-# ----------------------
-# MEDIA / STREAMING
-# Purpose: Spotify, Plex, video/audio streaming services
-# ----------------------
-
-open.spotify.com                            # Spotify web player
-plex.bz                                     # Plex short URL service
-plex.tv                                     # Plex media server
-plexapp.com                                 # Plex applications
-wl.spotify.com                              # Spotify web services
-
-# ----------------------
 # CONTENT DELIVERY / INFRASTRUCTURE
-# Purpose: CDNs, image hosting, static content
+# Purpose: CDNs, image hosting, static content delivery
 # ----------------------
 
 amazonaws.com                               # Amazon Web Services
@@ -99,7 +67,6 @@ cloudflare.com                              # Cloudflare CDN
 cloudfront.net                              # Amazon CloudFront CDN
 edge.api.brightcove.com                     # Brightcove API
 embedly.com                                 # Content embedding service
-geo3.ggpht.com                              # Google geo-distributed content
 gravatar.com                                # Gravatar profile images
 imgix.net                                   # Image optimization/CDN
 jsdelivr.net                                # jsDelivr CDN
@@ -107,6 +74,37 @@ jquery.com                                  # jQuery CDN
 players.brightcove.net                      # Brightcove video players
 res.cloudinary.com                          # Cloudinary image hosting
 s3.amazonaws.com                            # Amazon S3 storage
+
+# ----------------------
+# COMMUNICATION / MESSAGING
+# Purpose: Signal, Discord, messaging platforms
+# ----------------------
+
+contentproxy.signal.org                     # Signal content proxy
+discordapp.com                              # Discord platform
+giphy-proxy-production.whispersystems.org   # Signal GIPHY proxy
+giphy.com                                   # GIPHY API
+signal.org                                  # Signal encrypted messaging
+textsecure-service-whispersystems.org       # Signal backend services
+
+# ----------------------
+# SOCIAL MEDIA
+# Purpose: Facebook, Instagram
+# ----------------------
+
+connect.facebook.net                        # Facebook Connect/SDK
+graph.facebook.com                          # Facebook Graph API
+
+# ----------------------
+# MEDIA / STREAMING
+# Purpose: Spotify, Plex, video/audio streaming
+# ----------------------
+
+open.spotify.com                            # Spotify web player
+plex.bz                                     # Plex short URL service
+plex.tv                                     # Plex media server
+plexapp.com                                 # Plex applications
+wl.spotify.com                              # Spotify web services
 
 # ----------------------
 # DEVELOPER / TECHNICAL
@@ -128,7 +126,7 @@ sa.symcb.com                                # Symantec certificate services
 
 # ----------------------
 # GAMING
-# Purpose: Game services, updates, Rockstar, Sonarr
+# Purpose: Game services, updates, media management
 # ----------------------
 
 sonarr.tv                                   # Sonarr TV show management
@@ -147,8 +145,8 @@ gfwsl.geforce.com                           # GeForce driver update checks
 # Purpose: Payment processors, shopping platforms
 # ----------------------
 
-secure.avangate.com                         # Avangate payment processor
 imagesak.secureserver.net                   # GoDaddy/Secure Server images
+secure.avangate.com                         # Avangate payment processor
 
 # ----------------------
 # MEDIA / NEWS / EDUCATIONAL
