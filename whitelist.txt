@@ -194,3 +194,4 @@ log-appfirst.scotiabank.com                 # Scotiabank application logging
 
 
 youtubei.googleapis.com
+redirector.googlevideo.com
