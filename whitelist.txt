@@ -191,3 +191,6 @@ virtualearth.net                            # Bing Maps services
 # ----------------------
 
 log-appfirst.scotiabank.com                 # Scotiabank application logging
+
+
+youtubei.googleapis.com
