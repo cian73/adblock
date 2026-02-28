@@ -369,3 +369,13 @@ snapshots.xcdnpro.com                               # Adult content snapshots
 # ----------------------
 
 widget.intercom.io                                  # Intercom chat widget
+
+# ----------------------
+# EVALUATING
+# Purpose: Seeing what doesn't need to phone home
+# ----------------------
+
+cdn-au.onetrust.com
+events.api.serifservices.com
+go.seriflabs.com
+things.seriflabs.com
