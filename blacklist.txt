@@ -379,3 +379,4 @@ cdn-au.onetrust.com
 events.api.serifservices.com
 go.seriflabs.com
 things.seriflabs.com
+vidwestxyz.com
